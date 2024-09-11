@@ -5,23 +5,16 @@ sequência de Fibonacci e retorne uma mensagem avisando se o número informado p
 
 IMPORTANTE: Esse número pode ser informado através de qualquer entrada de sua preferência ou pode ser previamente definido no código;
 """
-def fibonacci(number): # sequencia até o num dado 
-    fibonacci_sequence = [0, 1] # inicia a sequencia com os dois primeiros num
-    while True:
-        next_fib = fibonacci_sequence[-1] + fibonacci_sequence[-2] # next = soma dos dois anteriores 
-        fibonacci_sequence.append(next_fib) # adciona next no fim 
-        if next_fib >= number: # caso next maior que num sai 
-            break
-    return fibonacci_sequence # caso contrario chama a func novamente
 
 def is_fibonacci(num):
-    sequence = fibonacci(num)
-    if num in sequence:
-        return f"O número {num} pertence à sequência de Fibonacci."
-    else:
-        return f"O número {num} não pertence à sequência de Fibonacci."
+  a, b = 0, 1 
+  while b < num: # enquanto o numero for menor que valor a ser verificado gera-se a sequencia 
+    a, b = b, a + b # a=b e b=b+a
+   
+  if b == num: # testa se b é o numero
+    return f"O número {num} pertence à sequência de Fibonacci."
+  else:
+    return f"O número {num} não pertence à sequência de Fibonacci."
 
-# Exemplo de uso
-numero = int(input("Digite um número para verificar na sequência de Fibonacci: "))
-resultado = is_fibonacci(numero)
-print(resultado)
+numero = int(input("Digite um número > "))
+print(is_fibonacci(numero))
