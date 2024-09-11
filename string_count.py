@@ -3,17 +3,19 @@ seja maiúscula ou minúscula, além de informar a quantidade de vezes em que el
 IMPORTANTE: Essa string pode ser informada através de qualquer entrada de sua 
 preferência ou pode ser previamente definida no código. """
 
-def conta_a(string):
-    cont = string.lower().count('a') # Convertemos a string para minúsculas para contar tanto 'a' quanto 'A' de uma vez
-    
-    if cont > 0:
-        print(f"A letra 'a' aparece {cont} vezes na string.")
-    else:
-        print("A letra 'a' não foi encontrada na string.")
+def conta_a(texto):
+  cont = 0
+  found = False
 
-# String informada diretamente no código
-# string_predefinida = "Aprender programação pode ser divertido."
-# conta_a(string_predefinida)
+  for caractere in texto:
+    if caractere.lower() == 'a':
+      cont += 1
+      found = True
+  if found:
+    print(f"A letra 'a' foi found {cont} vezes na string.")
+  else:
+    print("A letra 'a' não foi found na string.")
 
-userinput = input("Digite uma string: ")
+# userinput = "Aprender programação pode ser divertido."
+userinput = input("Digite uma frase: ")
 conta_a(userinput)
