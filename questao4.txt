@@ -1,0 +1,33 @@
+4) Descubra a lógica e complete o próximo elemento:
+a) 1, 3, 5, 7, ___
+    a(n) = a(n-1) + 2 para n>=1 (N* - naturais não nulos)
+    a(5) = a(4) + 2
+    a(5) = 7 + 2 = 9
+    ou seja, é a sequência de numeros ímpares e o próximo elemento é 9.
+
+b) 2, 4, 8, 16, 32, 64, ____
+    a(n) = 2^n para n>=1 (N*)
+    a(7) = 2^7 = 128 
+    ou seja, é a sequência de potência de base 2 com expoente N* e o próximo elemento é 128.
+
+c) 0, 1, 4, 9, 16, 25, 36, ____
+    a(n) = (n-1)^2 para n>=0
+    a(8) = (8-1)^2 
+    a(8) = 7^2 = 49
+    ou seja, é sequência de numeros naturais ao quadrado e o próximo elemento é 49.
+
+d) 4, 16, 36, 64, ____
+    a(n) = (2*n)^2  para n>=1
+    a(5) = (2*5)^2 = 100
+    ou seja, é a sequência de numeros pares ao quadrado e o próximo elemento é 100.
+
+e) 1, 1, 2, 3, 5, 8, ____
+    a(n) = a(n-1) + a(n-2)  para n>=1
+    a(7) = a(7-1) + a(7-2)
+    a(7) = 8 + 5 = 13
+    ou seja, é a Sequência de Fibonacci e o próximo elemento é 13.
+
+f) 2, 10, 12, 16, 17, 18, 19, ____
+    a(n) = ? 
+    # Apesar de observar alguns padrôes, não consegui identificar a lógica por trás dessa sequência,
+    caso ela exista, e determinar o próximo elemento. 

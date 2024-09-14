@@ -1,0 +1,37 @@
+3) Observe o trecho de código abaixo: 
+
+int INDICE = 12, SOMA = 0, K = 1; 
+enquanto K < INDICE faça {
+    K = K + 1; SOMA = SOMA + K;
+}
+imprimir(SOMA);
+
+Ao final do processamento, qual será o valor da variável SOMA?
+
+enquanto K < INDICE faça {  # k vai de 1 a 11 
+    K = K + 1; # itera o valor de k até atingir o valor da condição do while
+    SOMA = SOMA + K; # soma representa soma dos valores de k
+}
+Assim temos na primeira iteração: 
+enquanto 1 < 12 faça {   
+    K = 1 + 1; 
+    SOMA = 0 + 2; 
+}
+Na 2 iteração: 
+enquanto 2 < 12 faça {   
+    K = 2 + 1; 
+    SOMA = 2 + 3; 
+}
+...
+Na 10 iteração: 
+enquanto 10 < 12 faça {   
+    K = 10 + 1; 
+    SOMA = 54 + 11; 
+}
+Na 11 iteração: 
+enquanto 11 < 12 faça {   
+    K = 11 + 1; 
+    SOMA = 65 + 12; 
+}
+
+Com isso, ao final do processamento o valor da vaiável SOMA será igual 77.
